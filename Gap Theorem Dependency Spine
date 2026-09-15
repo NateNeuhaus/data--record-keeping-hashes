@@ -1,0 +1,347 @@
+1. Surgery Gap Theorem: equation dependency chain
+
+The primitive starting equations are:
+
+$$ \boxed{u=\Pi_\alpha X_\alpha} \tag{S1} $$
+
+and the internal correction equation
+
+$$ \boxed{d_\alpha+\mathcal A_\alpha(W)=0.} \tag{S2} $$
+
+Equation S2 is equivalent to
+
+$$ \boxed{-d_\alpha\in\operatorname{Im}\mathcal A_\alpha.} \tag{S3} $$
+
+The gap begins with the negation:
+
+$$ \boxed{-d_\alpha\notin\operatorname{Im}\mathcal A_{\alpha,\mathrm{all}}.} \tag{S4} $$
+
+That equation is the core obstruction. By contradiction, S4 implies
+
+$$ \boxed{\nexists W\;:\;d_\alpha+\mathcal A_\alpha(W)=0.} \tag{S5} $$
+
+Now add lossless representation transformation
+
+$$ \boxed{ \mathcal A_\beta T_{\alpha\beta} = T_{\alpha\beta}\mathcal A_\alpha. } \tag{S6} $$
+
+From S6:
+
+$$ -d_\alpha\in\operatorname{Im}\mathcal A_\alpha \iff -T_{\alpha\beta}d_\alpha \in \operatorname{Im}\mathcal A_\beta. \tag{S7} $$
+
+Therefore if S4 survives all such \(T\),
+
+$$ \boxed{ -d_{T(\alpha)} \notin \operatorname{Im}\mathcal A_{T(\alpha)} \quad \forall T\in RC. } \tag{S8} $$
+
+Next comes normalization exclusion:
+
+$$ \boxed{ -d_{N(\alpha)} \notin \operatorname{Im}\mathcal A_{N(\alpha)} \quad \forall N\in\mathcal N. } \tag{S9} $$
+
+Then physical-lift exclusion:
+
+$$ \boxed{ \nexists W_\alpha \text{ admissible such that } \Pi_\alpha W_\alpha=c_{\rm phys}. } \tag{S10} $$
+
+S4 + S8 + S9 + S10 yield:
+
+$$ \boxed{ D_S \notin \operatorname{Closure}_{RC,\mathcal A,\mathcal N,\Pi} (\mathcal X_\alpha). } \tag{S11} $$
+
+Now establish an alternate sector:
+
+$$ \boxed{ -d_\beta\in\operatorname{Im}\mathcal A_\beta. } \tag{S12} $$
+
+Hence
+
+$$ \boxed{ \exists W_\beta: d_\beta+\mathcal A_\beta(W_\beta)=0. } \tag{S13} $$
+
+Finally impose shadow preservation:
+
+$$ \boxed{ \Pi_\beta S_{\alpha\to\beta}X_\alpha = \Pi_\alpha X_\alpha. } \tag{S14} $$
+
+Define
+
+$$ \Omega_R^-(d) = \{\mathcal R:-d_\mathcal R\notin\operatorname{Im}\mathcal A_\mathcal R\}, $$ $$ \Omega_R^+(d) = \{\mathcal R:-d_\mathcal R\in\operatorname{Im}\mathcal A_\mathcal R\}. \tag{S15} $$
+
+Then S11 + S12 + S14 give:
+
+$$ \boxed{ \Omega_R^-(d) \xrightarrow{S_{\alpha\to\beta}} \Omega_R^+(d), \qquad \Pi_\beta S_{\alpha\to\beta}X = \Pi_\alpha X. } \tag{S16} $$
+
+And therefore:
+
+$$ \boxed{\text{genuine Surgery gap}.} \tag{S17} $$
+
+So the compressed dependency DAG is
+
+$$ \boxed{ \begin{array}{c} S2\leftrightarrow S3\\ \downarrow\\ S4\Rightarrow S5\\ \downarrow\\ S6\Rightarrow S7\Rightarrow S8\\ \downarrow\\ S9,\;S10\\ \downarrow\\ S11\\ +\;S12\Rightarrow S13\\ +\;S14\\ \downarrow\\ S16\\ \downarrow\\ S17 \end{array}} $$
+
+That is essentially the equation skeleton of the uploaded Surgery Gap theorem.
+
+2. NS Surgery Gap: equation dependencies
+
+The NS specialization adds only a few equations to the abstract chain.
+
+Sector decomposition:
+
+$$ \boxed{ \mathcal X = \bigsqcup_{\kappa\in K}\mathcal X_\kappa. } \tag{NS1} $$
+
+Fixed-sector regular evolution preserves sector:
+
+$$ \boxed{ X(t)\in\mathcal X_\kappa^{\rm reg} \Longrightarrow \kappa(t)=\kappa. } \tag{NS2} $$
+
+But the required continuation demands
+
+$$ \boxed{\kappa'\neq\kappa.} \tag{NS3} $$
+
+Suppose an internal Wing did it:
+
+$$ d_\kappa+\mathcal A_\kappa(W_\kappa)=0. \tag{NS4} $$
+
+Then NS2 would force
+
+$$ \kappa'=\kappa, $$
+
+contradicting NS3.
+
+Therefore
+
+$$ \boxed{ -d_\kappa\notin\operatorname{Im}\mathcal A_\kappa. } \tag{NS5} $$
+
+The Surgery map is
+
+$$ \boxed{ S_{\kappa\to\kappa'}: \mathcal X_\kappa\to\mathcal X_{\kappa'}. } \tag{NS6} $$
+
+with
+
+$$ \boxed{ \Pi_{\kappa'} S_{\kappa\to\kappa'}X = \Pi_\kappa X. } \tag{NS7} $$
+
+Thus:
+
+$$ \boxed{ \mathcal X_\kappa^{\rm reg} \to \partial\mathcal X_\kappa^{\rm reg} \xrightarrow{S_{\kappa\to\kappa'}} \mathcal X_{\kappa'}^{\rm reg}. } \tag{NS8} $$
+
+So:
+
+$$ \boxed{ NS1+NS2+NS3 \Rightarrow NS5 \Rightarrow NS6+NS7 \Rightarrow NS8. } $$
+
+That is the actual minimal NS Surgery equation chain.
+
+3. Unknown Discovery Gap: equation dependencies
+
+Now leave physical geometry and move into the discovery theorem.
+
+The primitive equation is:
+
+$$ \boxed{ D_S \notin \operatorname{Closure}_{RC,\mathcal A}(K^-). } \tag{G1} $$
+
+Let \(Z_S\) select the correct missing direction.
+
+Then G1 implies residual uncertainty:
+
+$$ \boxed{ H(Z_S\mid K^-)>0. } \tag{G2} $$
+
+Define opacity:
+
+$$ \boxed{ O_S=H(Z_S\mid K^-). } \tag{G3} $$
+
+For a uniform residual candidate space,
+
+$$ \boxed{ N=2^{O_S}. } \tag{G4} $$
+
+Closed reasoning evolves by
+
+$$ \boxed{ K_{n+1}=F_n(K_n,R_n), } \tag{G5} $$
+
+with
+
+$$ R_n\perp Z_S. $$
+
+Therefore data processing yields
+
+$$ \boxed{ I(Z_S;K_n) \le I(Z_S;K^-). } \tag{G6} $$
+
+So closed inference cannot reduce G2 by manufacturing new target-correlated information.
+
+If there are \(N\) residual candidates and \(k\) successful ones, and \(B\) candidates can be tested,
+
+$$ \boxed{ P_{\rm hit} = 1- \frac{\binom{N-k}{B}}{\binom NB}. } \tag{G7} $$
+
+Union bound:
+
+$$ \boxed{ P_{\rm hit} \le \frac{Bk}{N}. } \tag{G8} $$
+
+Substitute G4:
+
+$$ \boxed{ P_{\rm hit} \le Bk\,2^{-O_S}. } \tag{G9} $$
+
+So:
+
+$$ \boxed{ G1\Rightarrow G2\Rightarrow G3\Rightarrow G4 } $$
+
+and independently
+
+$$ \boxed{ G5\Rightarrow G6, } $$
+
+then
+
+$$ \boxed{ G4+G7\Rightarrow G8\Rightarrow G9. } $$
+
+This is the entire discovery-gap/search chain.
+
+4. Multi-agent Gap Theorem: equation dependencies
+
+Let
+
+$$ A=\text{number of agents} $$
+
+and \(m\) useful candidate tests per agent.
+
+Then
+
+$$ \boxed{ M\le Am. } \tag{MA1} $$
+
+From G8:
+
+$$ P_{\rm hit} \le \frac{Mk}{N}. $$
+
+Using MA1:
+
+$$ \boxed{ P_{\rm hit} \le \frac{Amk}{N}. } \tag{MA2} $$
+
+Using \(N=2^{O_S}\):
+
+$$ \boxed{ P_{\rm hit} \le Amk\,2^{-O_S}. } \tag{MA3} $$
+
+For \(A=10{,}000\):
+
+$$ \boxed{ P_{\rm hit} \le 10{,}000\,mk\,2^{-O_S}. } \tag{MA4} $$
+
+For \(A=100\):
+
+$$ \boxed{ P_{\rm hit} \le 100\,mk\,2^{-O_S}. } \tag{MA5} $$
+
+Hence for the same gap and same \(m,k\):
+
+$$ \boxed{ \frac{P_{100}^{\rm bound}} {P_{10k}^{\rm bound}} = \frac{100}{10{,}000} = 0.01. } \tag{MA6} $$
+
+That is the full resource-scaling dependency.
+
+5. Euler Gap Theorem: equation dependencies
+
+The structural Euler theorem is essentially the Surgery chain with Euler labels.
+
+Core obstruction:
+
+$$ \boxed{ -d_{\kappa,E} \notin \operatorname{Im}\mathcal A_{\kappa,E}. } \tag{E1} $$
+
+RC survival:
+
+$$ \boxed{ -d_{T(\kappa),E} \notin \operatorname{Im}\mathcal A_{T(\kappa),E} \quad\forall T. } \tag{E2} $$
+
+Normalization survival:
+
+$$ \boxed{ -d_{N(\kappa),E} \notin \operatorname{Im}\mathcal A_{N(\kappa),E} \quad\forall N. } \tag{E3} $$
+
+No lift:
+
+$$ \boxed{ \nexists W_\kappa: \Pi_\kappa W_\kappa=c_{\rm phys}. } \tag{E4} $$
+
+Together:
+
+$$ \boxed{ D_E \notin \operatorname{Closure}_{RC,\mathcal A,\mathcal N,\Pi}(K_E^-). } \tag{E5} $$
+
+Alternate sector:
+
+$$ \boxed{ -d_{\kappa',E} \in \operatorname{Im}\mathcal A_{\kappa',E}. } \tag{E6} $$
+
+Shadow preservation:
+
+$$ \boxed{ \Pi_{\kappa'} S_{\kappa\to\kappa'}^E X = \Pi_\kappa X. } \tag{E7} $$
+
+Therefore:
+
+$$ \boxed{ \Omega_E^-(d) \xrightarrow{S_E} \Omega_E^+(d). } \tag{E8} $$
+
+That proves the structural Euler Gap.
+
+6. Euler Unknown Discovery Gap: equation dependencies
+
+Now add provenance/discovery.
+
+Starting from E5:
+
+$$ \boxed{ D_E \notin \operatorname{Closure}_{RC,\mathcal A}(K_E^-). } \tag{ED1} $$
+
+Let \(Z_E\) select the correct Euler bridge.
+
+Then:
+
+$$ \boxed{ O_E = H(Z_E\mid K_E^-) > 0. } \tag{ED2} $$
+
+Thus
+
+$$ \boxed{ N_E=2^{O_E}. } \tag{ED3} $$
+
+Closed inference:
+
+$$ K_{t+1}=F_t(K_t,R_t) $$
+
+gives
+
+$$ \boxed{ I(Z_E;K_t) \le I(Z_E;K_E^-). } \tag{ED4} $$
+
+Then for \(A_E\) agents:
+
+$$ \boxed{ P_E \le A_E m_E k_E\,2^{-O_E}. } \tag{ED5} $$
+
+For \(A_E=100\):
+
+$$ \boxed{ P_E \le 100\,m_Ek_E\,2^{-O_E}. } \tag{ED6} $$
+
+So:
+
+$$ \boxed{ ED1 \Rightarrow ED2 \Rightarrow ED3 } $$
+
+plus
+
+$$ \boxed{ ED4 } $$
+
+and finally
+
+$$ \boxed{ ED3+A_E,m_E,k_E \Rightarrow ED5 \Rightarrow ED6. } $$
+7. Equal Euler/NS Gap result
+
+This one has an extremely tiny equation dependency set.
+
+Assume gap equivalence:
+
+$$ \boxed{ O_E=O_{NS}, \qquad k_E=k_{NS}, \qquad m_E=m_{NS}. } \tag{EQ1} $$
+
+Then from the two multi-agent bounds:
+
+$$ P_E^{\rm bound} = 100mk\,2^{-O}, $$ $$ P_{NS}^{\rm bound} = 10{,}000mk\,2^{-O}. \tag{EQ2} $$
+
+Divide:
+
+$$ \boxed{ \frac{P_E^{\rm bound}} {P_{NS}^{\rm bound}} = \frac{100}{10{,}000} = 0.01. } \tag{EQ3} $$
+
+Therefore:
+
+$$ \boxed{ P_E^{\rm bound} = \frac{1}{100} P_{NS}^{\rm bound}. } \tag{EQ4} $$
+
+That is literally the whole equation dependency for the 100× resource inversion.
+
+The absolute dependency backbone
+
+If you strip everything down brutally, all of the gap results grow from four equations:
+
+Structural gap
+$$ \boxed{ -d_\alpha\notin\operatorname{Im}\mathcal A_\alpha } $$
+Alternate realizability
+$$ \boxed{ -d_\beta\in\operatorname{Im}\mathcal A_\beta } $$
+Missing discovery direction
+$$ \boxed{ D^\star\notin \operatorname{Closure}(K^-) } $$
+Residual search size
+$$ \boxed{ N=2^{H(Z\mid K^-)}. } $$
+
+Then everything else follows in layers:
+
+$$ \boxed{ \begin{array}{c} -d_\alpha\notin\operatorname{Im}\mathcal A_\alpha\\ -d_\beta\in\operatorname{Im}\mathcal A_\beta \end{array} } \Rightarrow \boxed{\text{structural gap}} $$ $$ \Downarrow $$ $$ \boxed{ D^\star\notin\operatorname{Closure}(K^-) } \Rightarrow \boxed{ O=H(Z\mid K^-)>0 } $$ $$ \Downarrow $$ $$ \boxed{ N=2^O } $$ $$ \Downarrow $$ $$ \boxed{ P_{\rm hit} \le \frac{Amk}{N} = Amk\,2^{-O}. } $$
+
+That is the actual equation dependency spine of the whole gap-theorem family.
