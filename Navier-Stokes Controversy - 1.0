@@ -1,0 +1,135 @@
+The Arrow That Looked Real
+
+When OpenAI announced that its AI system had produced solutions to two of the hardest problems in fluid mathematics, the story was immediately extraordinary. One involved the Euler equations, which describe an ideal fluid with no viscosity. The other involved Navier–Stokes, one of the famous Millennium Prize Problems, which describes fluids with viscosity and asks, among other things, whether solutions can develop singularities.
+
+OpenAI’s account seemed to have a beautifully natural sequence. First, its agents solved Euler. Then, according to OpenAI, that result made Navier–Stokes look like the most promising problem to attack next. Agents were shifted onto Navier–Stokes and were given the Euler resolution. Then came the Navier–Stokes result.
+
+On the surface, the story almost tells itself: Euler gave them the clue, they followed it, and Navier–Stokes came next.
+
+That was how I understood it at first too.
+
+Then I started looking at the mathematics.
+
+What caught my attention immediately was that the decisive machinery was geometric. That mattered to me for a very specific reason. I had also spent a great deal of time working on Navier–Stokes, and I had specifically tried to attack it from a geometric direction. So when I looked at OpenAI’s construction, this was not some vague stylistic feature I happened to notice. It jumped out at me.
+
+The geometry was not merely decorative or there to make an analytic argument easier to picture. It was doing real structural work. And because I had already been thinking about the problem that way myself, I knew that a geometric attack changes the kinds of hard choices you face. It changes what counts as a useful intermediate result, what kinds of obstructions appear, and what kind of prior result would actually help you move forward.
+
+So once I saw the geometric nature of the construction, I expected the Euler result to appear somewhere inside that machinery in a concrete way. If Euler had really guided the Navier–Stokes solution, there should have been a handoff. Somewhere the earlier result should have told the later solver what to choose, what structure to use, what route to take, or how to get around one of the hard points.
+
+I went looking for that handoff.
+
+At first I expected it to be obvious. It was not.
+
+I followed the construction and kept asking the same question: what did Euler actually tell the solver to do here? Then at the next major choice, the same question. Then again. Maybe Euler revealed the crucial geometry. Maybe it told the construction how to get past the point where the current approach stopped working. Maybe it narrowed the field of possibilities in some meaningful way.
+
+But the more closely I looked, the less of that I could find.
+
+Euler and Navier–Stokes are obviously related equations. Nobody disputes that. But being related is not the same thing as one solution telling you how to build the other. Two locked doors can belong to the same house. That does not mean the key to one opens the other.
+
+That was the point where I changed the question. Instead of asking, “How did Euler lead to Navier–Stokes?” I started asking, “What actual difficult decision in the Navier–Stokes construction became easier once Euler was known?”
+
+That is a much cleaner test.
+
+If Euler really guided the later construction, there should be some point where you can say: before Euler, there were several possible ways forward; after Euler, we knew which one to choose.
+
+But when I compared the hard pieces of the construction, that reduction did not appear. The Euler result could certainly explain why somebody became excited about Navier–Stokes. It could explain why the problem suddenly looked worth trying. But that is very different from saying the result showed how to solve it.
+
+And suddenly OpenAI’s public story looked different to me.
+
+The sequence of events naturally gives the impression of a mathematical progression: Euler, then Navier–Stokes. But the mathematics I was tracing did not seem to contain that same arrow.
+
+Then came the part I did not expect at all.
+
+There was another Euler result sitting in the background, the forced-Euler work of Levent Alpöge and Tristan Buckmaster. Their route was different. It was analytic rather than geometric.
+
+And when I compared their method with the forced-Euler result, something clicked almost immediately. There, the connection actually made sense.
+
+In Buckmaster’s style of approach, the solver repeatedly modifies an approximate fluid solution. Every time you modify it, you create new mathematical errors. Those errors have to be controlled somehow, and a forcing term naturally belongs in that architecture.
+
+So forced Euler was not just vaguely related to Buckmaster’s method. It fit the kind of problem that method naturally creates.
+
+For the first time, I could answer the question I had been asking all along: what does the earlier result actually help you do?
+
+There was an answer.
+
+And that was the moment the whole thing became much stranger.
+
+Because the mathematical arrow I had expected to find in OpenAI’s geometric progression was showing up clearly in Buckmaster’s analytic progression instead. I had gone looking for the bridge between Euler and the geometric Navier–Stokes solution. Instead, I found the bridge attached to another road.
+
+That was not a small discrepancy. It changed the character of the story.
+
+The apparent sequence was Euler, then geometric Navier–Stokes. But the mathematical usefulness of the Euler-type precursor looked much more natural in the forced-Euler-to-analytic route associated with Buckmaster’s method.
+
+And once you see that, the chronology becomes difficult to read in quite the same way.
+
+If I tell you, “I solved Problem A, because of that I moved on to Problem B, I gave the solution to A to the people working on B, and then they solved B,” you will naturally assume that A contained some clue that helped solve B. The implication practically writes itself in the reader’s head.
+
+But what if A mainly explains why B was chosen, while the actual solution to B depends on ideas that A does not supply?
+
+Then the story still looks causal. It just is not causal in the way most people would naturally assume.
+
+And that is where the controversy begins.
+
+At that point I went backward one step. Buckmaster and Alpöge had their forced-Euler result. OpenAI later obtained a geometric unforced-Euler result. So I asked exactly the same question again: what difficult choice in the geometric Euler construction did the earlier forced-Euler result actually make easier?
+
+Once again, the mathematical handoff seemed to disappear.
+
+Now the sequence looked like this: Buckmaster forced Euler, then OpenAI geometric Euler, then OpenAI geometric Navier–Stokes. But when I followed the mathematical information instead of the dates, the arrows looked different. The first earlier result did not appear to explain the hard geometric choices in the next construction. Then the geometric Euler result did not appear to explain the hard geometric choices in the later Navier–Stokes construction.
+
+And yet the forced-Euler relationship made perfectly good mathematical sense in Buckmaster’s analytic architecture.
+
+That is the part that made me stop.
+
+Because now this was not simply, “I cannot find the clue.”
+
+It was, “The clue appears to belong to a different method.”
+
+There are two very different ways an earlier result can influence a later discovery. One tells you where to look. The other tells you what to do once you get there.
+
+Those are not the same thing.
+
+Maybe Euler succeeded, so Navier–Stokes suddenly looked promising. That is perfectly understandable. But that only explains why the researchers chose the next target. It does not explain how they found the hard geometric choices that made the solution work.
+
+And that distinction is central to the controversy.
+
+The public chronology can easily be read as though the first kind of influence became the second. The mathematical audit says that is exactly the step that needs to be demonstrated.
+
+The test is almost ridiculously simple. You do not need to understand advanced fluid mechanics to understand it.
+
+Just ask: what important decision in the later solution did the earlier result actually make easier?
+
+Not “the two problems were related.” Not “it inspired us.” Not “it made Navier–Stokes look promising.”
+
+A real decision.
+
+Something where you can honestly say: we did not know which way to go before; once we had the earlier result, we knew.
+
+If that can be shown, the controversy weakens immediately.
+
+But if it cannot, then the chronology and the mathematics are telling two different stories.
+
+One story explains why the researchers looked in a particular direction. The other still has to explain how the successful mathematical direction was found.
+
+That is the mystery I did not expect to uncover.
+
+I began with a simple assumption: Euler came first because Euler helped lead to Navier–Stokes.
+
+I went into the mathematics expecting to find that path.
+
+I did not.
+
+Instead, I found that the earlier result seemed mathematically useful in another architecture, the analytic route associated with Buckmaster’s method.
+
+That is the discovery that changes the entire character of the story.
+
+The question is no longer simply why OpenAI chose Navier–Stokes next.
+
+That part has an answer.
+
+The question left behind by the mathematics is much more unsettling:
+
+If the result they were given did not tell them how to make the decisive geometric choices, what did?
+
+And that is where the clean story ends.
+
+And the mystery begins.
